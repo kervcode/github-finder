@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './components/layout/Navbar';
-import UserItem from './components/users/UserItem';
 import './App.css';
+import Users from './components/users/Users';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <div className="App">
         <Navbar title="GitHub Finder" icon="fab fa-github"/>
-        <UserItem />
+        <div className="container">
+          <Users />
+        </div>
+      
       </div>
   );
-  }
 }
 
 export default App;
